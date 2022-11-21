@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="297" id="KGk-i7-Jjw" customClass="TitleDescriptionCell" customModule="Alfagift_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="286"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Qatar, the World Cup is a high-stakes test and a show of clout - The Washington Post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c42-qQ-8Ak">
+                        <rect key="frame" x="16" y="10" width="428" height="40.666666666666664"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-Nl-0Cc">
+                        <rect key="frame" x="16" y="58.666666666666686" width="428" height="211.33333333333331"/>
+                        <string key="text">For all Qatar’s progress, the country will be tested over the next month as it hosts the World Cup, inviting a rare degree of scrutiny and criticism.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c42-qQ-8Ak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5pm-dM-Hag"/>
+                    <constraint firstAttribute="trailing" secondItem="Gbb-Nl-0Cc" secondAttribute="trailing" constant="16" id="MZ6-ma-Kbo"/>
+                    <constraint firstItem="c42-qQ-8Ak" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PS2-4e-Rf4"/>
+                    <constraint firstItem="Gbb-Nl-0Cc" firstAttribute="top" secondItem="c42-qQ-8Ak" secondAttribute="bottom" constant="8" id="XEZ-hR-lxa"/>
+                    <constraint firstAttribute="bottom" secondItem="Gbb-Nl-0Cc" secondAttribute="bottom" constant="16" id="aKW-We-1vQ"/>
+                    <constraint firstItem="Gbb-Nl-0Cc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kzm-VY-dsN"/>
+                    <constraint firstAttribute="trailing" secondItem="c42-qQ-8Ak" secondAttribute="trailing" constant="16" id="l6d-LM-M7G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelDsc" destination="Gbb-Nl-0Cc" id="usq-FM-D1f"/>
+                <outlet property="labelTitle" destination="c42-qQ-8Ak" id="oeC-8y-uiH"/>
+            </connections>
+            <point key="canvasLocation" x="222.90076335877862" y="86.619718309859152"/>
+        </tableViewCell>
+    </objects>
+</document>

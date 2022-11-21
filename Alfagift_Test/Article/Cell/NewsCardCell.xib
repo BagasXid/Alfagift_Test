@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCardCell" rowHeight="334" id="KGk-i7-Jjw" customClass="NewsCardCell" customModule="Alfagift_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="334"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-11-20T05:12:49Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3X-OO-zsr">
+                        <rect key="frame" x="16" y="16" width="122" height="14"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9jG-E6-y7i">
+                        <rect key="frame" x="344" y="117" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="AYz-Tb-bpM"/>
+                            <constraint firstAttribute="height" constant="100" id="qY5-Ey-pRQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tomorrow's Top 25 Today: USC, Clemson playoff profiles improve amid jumps in college football rankings - CBS Sports" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hae-NN-WWf">
+                        <rect key="frame" x="16" y="40" width="304" height="284"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hae-NN-WWf" firstAttribute="top" secondItem="I3X-OO-zsr" secondAttribute="bottom" constant="10" id="4Zg-56-y2x"/>
+                    <constraint firstAttribute="bottom" secondItem="hae-NN-WWf" secondAttribute="bottom" constant="10" id="H3K-xx-xaj"/>
+                    <constraint firstItem="I3X-OO-zsr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="IN2-iI-v3O"/>
+                    <constraint firstAttribute="trailing" secondItem="9jG-E6-y7i" secondAttribute="trailing" constant="16" id="TXy-8t-Snn"/>
+                    <constraint firstItem="9jG-E6-y7i" firstAttribute="leading" secondItem="hae-NN-WWf" secondAttribute="trailing" constant="24" id="Xwo-HT-CNM"/>
+                    <constraint firstItem="I3X-OO-zsr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YcG-1I-GdM"/>
+                    <constraint firstItem="9jG-E6-y7i" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kGi-JF-vXQ"/>
+                    <constraint firstItem="hae-NN-WWf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="olr-NW-jLk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="NewsCardCell"/>
+            <connections>
+                <outlet property="labelPublished" destination="I3X-OO-zsr" id="hbd-1q-ibH"/>
+                <outlet property="labelTitle" destination="hae-NN-WWf" id="VFK-BP-hYP"/>
+                <outlet property="newsImages" destination="9jG-E6-y7i" id="3O4-SA-Du3"/>
+            </connections>
+            <point key="canvasLocation" x="-1.5267175572519083" y="-16.901408450704228"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
